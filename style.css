@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin:0;
+  font-family: 'Press Start 2P', cursive;
+  transition: all 0.4s ease;
+}
+
+body.dark{
+  background:#121212;
+  color:#eee;
+}
+
+body.light{
+  background:#f5f5f5;
+  color:#111;
+}
+
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:2rem;
+  text-align:center;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:2rem;
+}
+
+.logo{
+  width:60px;
+  height:60px;
+}
+
+.toggle{
+  width:60px;
+  height:30px;
+  background:#444;
+  border:none;
+  border-radius:15px;
+  position:relative;
+  cursor:pointer;
+}
+
+body.light .toggle{
+  background:#ccc;
+}
+
+.circle{
+  width:28px;
+  height:28px;
+  background:#fff;
+  border-radius:50%;
+  position:absolute;
+  top:1px;
+  left:1px;
+  transition: all 0.3s ease;
+}
+
+body.light .circle{
+  left:31px;
+}
+
+h1{
+  font-size:1.8rem;
+  margin-bottom:1rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+p{
+  font-size:0.8rem;
+  margin-bottom:2rem;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.icons{
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+}
+
+.icon{
+  width:50px;
+  height:50px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover{
+  transform: scale(1.2) rotate(5deg);
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform: translateY(-10px);}
+  to{opacity:1; transform: translateY(0);}
+}
