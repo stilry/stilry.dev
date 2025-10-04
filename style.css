@@ -76,13 +76,13 @@ body.light .circle{
 }
 
 h1{
-  font-size:1.8rem;
+  font-size:1vw;
   margin-bottom:1rem;
   animation: fadeIn 1s ease forwards;
 }
 
 p{
-  font-size:0.8rem;
+  font-size:0.8vw;
   margin-bottom:2rem;
   animation: fadeIn 1.5s ease forwards;
 }
