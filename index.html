@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pixel vibes site</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="DarkLogo.png">
+</head>
+<body class="dark">
+<div class="container">
+  <header>
+    <img src="DarkLogo.png" alt="logo" class="logo">
+    <button id="toggle" class="toggle">
+      <span class="circle"></span>
+    </button>
+  </header>
+
+  <main>
+    <h1>hello :3</h1>
+    <p>explore the vibes and click some links maybe 👀</p>
+
+    <div class="icons">
+      <a href="#"><img class="icon twitch" src="DarkTwitch.png" alt="twitch"></a>
+      <a href="#"><img class="icon yt" src="DarkYT.png" alt="youtube"></a>
+      <a href="#"><img class="icon x" src="DarkX.png" alt="x"></a>
+    </div>
+  </main>
+</div>
+
+<script>
+const toggle = document.getElementById('toggle')
+const body = document.body
+const logo = document.querySelector('.logo')
+const twitch = document.querySelector('.twitch')
+const yt = document.querySelector('.yt')
+const xIcon = document.querySelector('.x')
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark')
+  body.classList.toggle('light')
+
+  if(body.classList.contains('light')){
+    logo.src = 'LightLogo.png'
+    twitch.src = 'LightTwitch.png'
+    yt.src = 'LightYT.png'
+    xIcon.src = 'LightX.png'
+  } else {
+    logo.src = 'DarkLogo.png'
+    twitch.src = 'DarkTwitch.png'
+    yt.src = 'DarkYT.png'
+    xIcon.src = 'DarkX.png'
+  }
+})
+</script>
+</body>
+</html>
