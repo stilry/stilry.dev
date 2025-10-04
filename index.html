@@ -41,15 +41,15 @@ toggle.addEventListener('click', () => {
   body.classList.toggle('light')
 
   if(body.classList.contains('light')){
-    logo.src = 'LightLogo.png'
-    twitch.src = 'LightTwitch.png'
-    yt.src = 'LightYT.png'
-    xIcon.src = 'LightX.png'
-  } else {
     logo.src = 'DarkLogo.png'
     twitch.src = 'DarkTwitch.png'
     yt.src = 'DarkYT.png'
     xIcon.src = 'DarkX.png'
+  } else {
+    logo.src = 'LightLogo.png'
+    twitch.src = 'LightTwitch.png'
+    yt.src = 'LightYT.png'
+    xIcon.src = 'LightX.png'
   }
 })
 </script>
