@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
+body {
   margin:0;
   font-family: 'Press Start 2P', cursive;
   transition: all 0.4s ease;
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(-45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e0e0e0 75%),
+    linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+  animation: moveBG 20s linear infinite;
+}
+
+@keyframes moveBG {
+  from {
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+  }
+  to {
+    background-position: 100px 100px, 100px 120px, 120px 80px, 80px 100px;
+  }
 }
 
 body.dark{
