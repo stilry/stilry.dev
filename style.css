@@ -51,7 +51,6 @@ header {
   border: none;
   position: relative;
   cursor: pointer;
-  border-radius: 15px;
 }
 
 body.light .toggle {
@@ -62,7 +61,6 @@ body.light .toggle {
   width: 28px;
   height: 28px;
   background: #fff;
-  border-radius: 50%;
   position: absolute;
   top: 1px;
   left: 1px;
