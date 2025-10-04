@@ -19,7 +19,8 @@
 <meta name="twitter:site" content="@stilryttv">
 </head>
 <body class="dark">
-<div class="checker-bg">
+<div class="checker-bg"></div>
+
 <div class="container">
   <header>
     <img src="LightLogo.png" alt="logo" class="logo">
@@ -52,7 +53,7 @@ toggle.addEventListener('click', () => {
   body.classList.toggle('dark')
   body.classList.toggle('light')
 
-  if(body.classList.contains('light')){
+  if (body.classList.contains('light')) {
     logo.src = 'DarkLogo.png'
     twitch.src = 'DarkTwitch.png'
     yt.src = 'DarkYT.png'
