@@ -142,7 +142,7 @@ p {
 }
 
 .pixel-btn {
-  font-family: 'Press Start 2P', cursive; /* retro pixel font */
+  font-family: 'Press Start 2P', cursive;
   background-color: #ff90e8;
   color: #000;
   padding: 12px 20px;
@@ -163,7 +163,6 @@ p {
   to { transform: translate(-50px, -50px); }
 }
 
-/* mobile-friendly adjustments */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
