@@ -141,7 +141,7 @@ p {
   animation: diagonalScroll 30s linear infinite;
 }
 
-.pixel-btn {
+.pixel-btn.light {
     display: flex;
   justify-content: center;
   gap: 2rem;
@@ -157,12 +157,12 @@ p {
   transition: all 0.1s ease;
 }
 
-.pixel-btn:hover {
+.pixel-btn.light:hover {
   box-shadow: 2px 2px 0 #000;
   transform: translate(2px, 2px);
 }
 
-.pixel-btn-light {
+.pixel-btn.dark {
     display: flex;
   justify-content: center;
   gap: 2rem;
@@ -178,7 +178,7 @@ p {
   transition: all 0.1s ease;
 }
 
-.pixel-btn-light:hover {
+.pixel-btn.dark:hover {
   box-shadow: 2px 2px 0 #000;
   transform: translate(2px, 2px);
 }
