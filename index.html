@@ -55,19 +55,19 @@ const btn = document.querySelector('.btn')
 toggle.addEventListener('click', () => {
   body.classList.toggle('dark')
   body.classList.toggle('light')
+  btn.classList.toggle('light')
+  btn.classList.toggle('dark')
 
   if (body.classList.contains('light')) {
     logo.src = 'DarkLogo.png'
     twitch.src = 'DarkTwitch.png'
     yt.src = 'DarkYT.png'
     xIcon.src = 'DarkX.png'
-    btn.class = 'pixel-btn-light'
   } else {
     logo.src = 'LightLogo.png'
     twitch.src = 'LightTwitch.png'
     yt.src = 'LightYT.png'
     xIcon.src = 'LightX.png'
-    btn.class = 'pixel-btn'
   }
 })
 </script>
