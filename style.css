@@ -142,6 +142,10 @@ p {
 }
 
 .pixel-btn {
+    display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   font-family: 'Press Start 2P', cursive;
   background-color: #ff90e8;
   color: #000;
@@ -159,6 +163,10 @@ p {
 }
 
 .pixel-btn-light {
+    display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   font-family: 'Press Start 2P', cursive;
   background-color: #ff90e8;
   color: #000;
