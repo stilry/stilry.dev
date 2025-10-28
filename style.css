@@ -89,6 +89,7 @@ p {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .icon {
@@ -173,13 +174,13 @@ p {
   padding: 12px 20px;
   border: 4px solid #fff;
   image-rendering: pixelated;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #fff;
   cursor: pointer;
   transition: all 0.1s ease;
 }
 
 .pixel-btn.light:hover {
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 #fff;
   transform: translate(2px, 2px);
 }
 
