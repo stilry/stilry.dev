@@ -50,13 +50,15 @@ const logo = document.querySelector('.logo')
 const twitch = document.querySelector('.twitch')
 const yt = document.querySelector('.yt')
 const xIcon = document.querySelector('.x')
-const btn = document.querySelector('.btn')
+const pixelBtn = document.querySelector('.pixel-btn')
 
 toggle.addEventListener('click', () => {
   body.classList.toggle('dark')
   body.classList.toggle('light')
-  btn.classList.toggle('dark')
-  btn.classList.toggle('light')
+  if (pixelBtn) {
+    pixelBtn.classList.toggle('dark')
+    pixelBtn.classList.toggle('light')
+  }
 
   if (body.classList.contains('light')) {
     logo.src = 'DarkLogo.png'
