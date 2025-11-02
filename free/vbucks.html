@@ -3,73 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>stilry[dot]dev's free vbucks link</title>
+<title>🔥 100% REAL FREE VBUCKS 🔥</title>
 <link rel="stylesheet" href="//stilry.dev/style.css">
 <link rel="icon" type="image/png" href="//stilry.dev/DarkLogo.png">
-<meta property="og:title" content="stilry[dot]dev's free vbucks link">
-<meta property="og:description" content="always wanted free vbuxcksksksks? come here today!!!11!!1!">
+<meta property="og:title" content="🔥 totally real vbucks giveaway 🔥">
+<meta property="og:description" content="get ur vbux RIGHT NOW!! no scam (trust)">
 <meta property="og:image" content="//stilry.dev/LightLogo.png">
 <meta property="og:url" content="https://stilry.dev">
 <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="//stilry.dev/LightLogo.png">
-<meta name="twitter:site" content="@stilryttv">
+<style>
+  body {
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background: radial-gradient(circle, #ff00ff, #000);
+    color: white;
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 150px;
+    animation: spin 4s linear infinite;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ff00ff;
+    animation: flash 1s infinite alternate;
+  }
+  @keyframes flash {
+    from { color: #00ffff; }
+    to { color: #ff00ff; }
+  }
+  .pixel-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff00ff;
+    color: white;
+    padding: 10px 25px;
+    border: 3px solid #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .pixel-btn:hover {
+    background-color: #00ffff;
+    border-color: #ff00ff;
+    transform: scale(1.2);
+  }
+  .music-btn {
+    margin-top: 30px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    border: 3px solid white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    animation: bounce 0.6s infinite alternate;
+  }
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+  }
+  .icons {
+    margin-top: 25px;
+  }
+  .icon {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+  }
+  .icon:hover {
+    transform: scale(1.3) rotate(10deg);
+  }
+</style>
 </head>
-<body class="dark">
+<body>
 
 <div class="container">
   <header>
-    <img src="LightLogo.png" alt="logo" class="logo">
-    <button id="toggle" class="toggle">
-      <span class="circle"></span>
-    </button>
+    <img src="//stilry.dev/LightLogo.png" alt="logo" class="logo">
   </header>
 
   <main>
-    <h1>trolled! haha nerd!</h1>
+    <h1>OMG!!! YOU WON FREE VBUCKS 🎉</h1>
+    <p>(definitely not a troll, trust me bro 😎)</p>
+
+    <button id="musicBtn" class="music-btn">🎵 play fortnite theme 🎵</button>
+    <audio id="fortniteAudio" src="https://www.myinstants.com/media/sounds/fortnite-default-dance-bass-boosted.mp3"></audio>
 
     <div class="icons">
-      <a href="//twitch.tv/stilry"><img class="icon twitch" src="//stilry.dev/LightTwitch.png" alt="twitch"></a>
-      <a href="//youtube.com/@stilry_plays"><img class="icon yt" src="//stilry.dev/LightYT.png" alt="youtube (gaming one, anyway)"></a>
-      <a href="//x.com/@stilryttv"><img class="icon x" src="//stilry.dev/LightX.png" alt="x"></a>
+      <a href="//twitch.tv/stilry"><img class="icon" src="//stilry.dev/LightTwitch.png" alt="twitch"></a>
+      <a href="//youtube.com/@stilry_plays"><img class="icon" src="//stilry.dev/LightYT.png" alt="youtube"></a>
+      <a href="//x.com/@stilryttv"><img class="icon" src="//stilry.dev/LightX.png" alt="x"></a>
     </div>
-    
+
     <br><br>
-    <p class="pixel-btn dark" style="cursor: default;">imagine getting trolled</p>
-    <a onclick="history.back()" class="pixel-btn dark">anyway click here to go back to the page u were just on via metamagical coding</a>
+    <p class="pixel-btn" style="cursor: default;">get trolled 😈</p>
+    <a onclick="history.back()" class="pixel-btn">go back home b4 u lose braincells 🧠</a>
   </main>
 </div>
 
 <script>
-const toggle = document.getElementById('toggle')
-const body = document.body
-const logo = document.querySelector('.logo')
-const twitch = document.querySelector('.twitch')
-const yt = document.querySelector('.yt')
-const xIcon = document.querySelector('.x')
-const pixelBtn = document.querySelector('.pixel-btn')
+  const musicBtn = document.getElementById('musicBtn')
+  const audio = document.getElementById('fortniteAudio')
+  let isPlaying = false
 
-toggle.addEventListener('click', () => {
-  body.classList.toggle('dark')
-  body.classList.toggle('light')
-  if (pixelBtn) {
-    pixelBtn.classList.toggle('dark')
-    pixelBtn.classList.toggle('light')
-  }
-
-  if (body.classList.contains('light')) {
-    logo.src = '//stilry.dev/DarkLogo.png'
-    twitch.src = '//stilry.dev/DarkTwitch.png'
-    yt.src = '//stilry.dev/DarkYT.png'
-    xIcon.src = '//stilry.dev/DarkX.png'
-  } else {
-    logo.src = '//stilry.dev/LightLogo.png'
-    twitch.src = '//stilry.dev/LightTwitch.png'
-    yt.src = '//stilry.dev/LightYT.png'
-    xIcon.src = '//stilry.dev/LightX.png'
-  }
-})
+  musicBtn.addEventListener('click', () => {
+    if (!isPlaying) {
+      audio.play()
+      musicBtn.innerText = '🔊 stop fortnite bass 🔊'
+      isPlaying = true
+    } else {
+      audio.pause()
+      audio.currentTime = 0
+      musicBtn.innerText = '🎵 play fortnite theme 🎵'
+      isPlaying = false
+    }
+  })
 </script>
 </body>
 </html>
